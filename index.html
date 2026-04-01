@@ -186,11 +186,11 @@ input:checked+.tslide:before{transform:translateX(16px)}
     <div class="live-badge"><span class="dot"></span>AI 实时翻译</div>
     <div class="hbtns">
       <select class="model-sel" id="modelSel" onchange="onModelChange()">
-        <option value="deepseek/deepseek-chat-v3-0324:free">⚡ DeepSeek V3</option>
+        <option value="deepseek/deepseek-chat-v3.1:free">⚡ DeepSeek V3</option>
         <option value="meta-llama/llama-4-maverick:free">🦙 Llama 4 Maverick</option>
         <option value="meta-llama/llama-3.3-70b-instruct:free">🦙 Llama 3.3 70B</option>
         <option value="google/gemma-3-27b-it:free">♊ Gemma 3 27B</option>
-        <option value="nvidia/llama-3.3-nemotron-super-49b-v1:free">🟢 Nemotron Super</option>
+        <option value="nvidia/nemotron-3-super-120b-a12b:free">🟢 Nemotron Super</option>
         <option value="openai/gpt-oss-120b:free">✨ GPT-OSS 120B</option>
       </select>
       <button class="btn" onclick="openSettings()">⚙ 设置</button>
@@ -326,11 +326,11 @@ input:checked+.tslide:before{transform:translateX(16px)}
 <script>
 // ─── DATA ───────────────────────────────────────────────────
 const MODELS = [
-  {id:'deepseek/deepseek-chat-v3-0324:free', name:'DeepSeek V3 Chat',    desc:'使用量 #1 · 中文翻译最佳 · 强推理',      tags:['热门']},
+  {id:'deepseek/deepseek-chat-v3.1:free', name:'DeepSeek V3 Chat',    desc:'使用量 #1 · 中文翻译最佳 · 强推理',      tags:['热门']},
   {id:'meta-llama/llama-4-maverick:free',    name:'Llama 4 Maverick',    desc:'使用量 #2 · Meta 最新旗舰 · 多语言',     tags:['热门']},
   {id:'meta-llama/llama-3.3-70b-instruct:free', name:'Llama 3.3 70B',   desc:'使用量 #3 · 稳定可靠 · 适合翻译',        tags:['热门']},
   {id:'google/gemma-3-27b-it:free',          name:'Gemma 3 27B',         desc:'2025 新增 · Google · 140+ 语言',         tags:['新']},
-  {id:'nvidia/llama-3.3-nemotron-super-49b-v1:free', name:'Nemotron Super 49B', desc:'2025 新增 · NVIDIA · 262K 上下文', tags:['新']},
+  {id:'nvidia/nemotron-3-super-120b-a12b:free', name:'Nemotron 3 Super 120B', desc:'2025 新增 · NVIDIA · 262K 上下文', tags:['新']},
   {id:'openai/gpt-oss-120b:free',            name:'GPT-OSS 120B',        desc:'2026 新增 · OpenAI 首个开源模型',        tags:['新']},
 ];
 const TRAD_SOURCES   = ['BBC','Reuters','TechCrunch','Bloomberg','The Verge','WSJ','Nature','Wired','AP News','Guardian','FT','Ars Technica'];
